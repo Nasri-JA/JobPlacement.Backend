@@ -14,13 +14,13 @@ public class Job {
     private String title;
     private String companyName;
     private String location;
-    private String salary;
+    private Double salary;
     private String description;
 
     public Job() {
     }
 
-    public Job(String title, String companyName, String location, String salary, String description) {
+    public Job(String title, String companyName, String location, Double salary, String description) {
         this.title = title;
         this.companyName = companyName;
         this.location = location;
@@ -44,7 +44,7 @@ public class Job {
         return location;
     }
 
-    public String getSalary() {
+    public Double getSalary() {
         return salary;
     }
 
@@ -68,7 +68,7 @@ public class Job {
         this.location = location;
     }
 
-    public void setSalary(String salary) {
+    public void setSalary(Double salary) {
         this.salary = salary;
     }
 
